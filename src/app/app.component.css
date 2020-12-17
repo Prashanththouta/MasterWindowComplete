@@ -1,0 +1,46 @@
+.container {
+  width: 95vw;
+  height: 90vh;
+  background-color: gray;
+  margin: 2%;
+  box-sizing: border-box;
+}
+
+.left, .middle, .right {
+  margin: .1%;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.abc {
+  width: 10px;
+}
+
+.left {
+  background-color: lightblue;
+  width: 25vw;
+  height: 90vh;
+  float: left
+}
+
+.middle {
+  background-color: lightcyan;
+  width: 44vw;
+  height: 90vh;
+  float: left;
+  overflow: auto;
+}
+
+.right {
+  background-color: lightcoral;
+  width: 25vw;
+  height: 90vh;
+  float: left;
+}
+
+/*Tree*/
+::ng-deep #treeview {
+	height: 90vh;
+  width: 100px;
+}
+

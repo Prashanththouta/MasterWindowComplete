@@ -1,0 +1,41 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div class='container'>
+  <div class='left'>
+    <span>Tree Data</span>
+<dx-tree-view
+    #treeview
+    [items]="products"
+    [width]="getTreeWidth()"
+    [height]="getHeight()"
+    [searchEnabled]="true"
+    searchMode="contains"
+></dx-tree-view>
+
+</div>
+
+<div class='middle'>
+  <span>Master Grid</span>
+  <dx-data-grid
+    id="gridContainer"
+    [width]='getGridWidth()'
+    [height]='getHeight()'
+    [dataSource]="customers"
+    [columns]="['CompanyName', 'City', 'State', 'Phone', 'Fax']"
+    [showBorders]="true">
+  </dx-data-grid>
+</div>
+<div class='right'>
+  <span>Master Properties</span>
+  <app-properties></app-properties>
+  </div>
+</div>
+
+
+<button (click)="getGridWidth()">click me</button>
+
+
+
